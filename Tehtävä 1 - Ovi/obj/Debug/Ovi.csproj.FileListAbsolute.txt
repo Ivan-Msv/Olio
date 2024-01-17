@@ -1,0 +1,7 @@
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 1 - Ovi\bin\Debug\Ovi.exe.config
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 1 - Ovi\bin\Debug\Ovi.exe
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 1 - Ovi\bin\Debug\Ovi.pdb
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 1 - Ovi\obj\Debug\Ovi.csproj.AssemblyReference.cache
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 1 - Ovi\obj\Debug\Ovi.csproj.CoreCompileInputs.cache
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 1 - Ovi\obj\Debug\Ovi.exe
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 1 - Ovi\obj\Debug\Ovi.pdb
