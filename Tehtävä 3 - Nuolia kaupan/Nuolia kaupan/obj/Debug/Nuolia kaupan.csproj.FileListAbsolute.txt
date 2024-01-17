@@ -1,0 +1,7 @@
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 3 - Nuolia kaupan\Nuolia kaupan\bin\Debug\Nuolia kaupan.exe.config
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 3 - Nuolia kaupan\Nuolia kaupan\bin\Debug\Nuolia kaupan.exe
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 3 - Nuolia kaupan\Nuolia kaupan\bin\Debug\Nuolia kaupan.pdb
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 3 - Nuolia kaupan\Nuolia kaupan\obj\Debug\Nuolia kaupan.csproj.AssemblyReference.cache
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 3 - Nuolia kaupan\Nuolia kaupan\obj\Debug\Nuolia kaupan.csproj.CoreCompileInputs.cache
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 3 - Nuolia kaupan\Nuolia kaupan\obj\Debug\Nuolia kaupan.exe
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 3 - Nuolia kaupan\Nuolia kaupan\obj\Debug\Nuolia kaupan.pdb

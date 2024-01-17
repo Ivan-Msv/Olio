@@ -1,0 +1,7 @@
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 2 - Ruoka annos gen\Ruoka annos gen\bin\Debug\Ruoka annos gen.exe.config
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 2 - Ruoka annos gen\Ruoka annos gen\bin\Debug\Ruoka annos gen.exe
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 2 - Ruoka annos gen\Ruoka annos gen\bin\Debug\Ruoka annos gen.pdb
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 2 - Ruoka annos gen\Ruoka annos gen\obj\Debug\Ruoka annos gen.csproj.AssemblyReference.cache
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 2 - Ruoka annos gen\Ruoka annos gen\obj\Debug\Ruoka annos gen.csproj.CoreCompileInputs.cache
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 2 - Ruoka annos gen\Ruoka annos gen\obj\Debug\Ruoka annos gen.exe
+C:\Users\s2200853\OneDrive - Business College Helsinki\Desktop\Olio\Tehtävä 2 - Ruoka annos gen\Ruoka annos gen\obj\Debug\Ruoka annos gen.pdb
