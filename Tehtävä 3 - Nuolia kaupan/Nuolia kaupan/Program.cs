@@ -6,40 +6,84 @@ using System.Threading.Tasks;
 
 namespace Nuolia_kaupan
 {
+    enum Karki
+    {
+        Puu, Teräs, Timantti
+    }
+    enum Pera
+    {
+        Lehti, Kanansulka, Kotkansulka
+    }
     class Program
     {
-        enum Karki
-        {
-            Puu, Teräs, Timantti
-        }
-        enum Pera
-        {
-            Lehti, Kanansulka, Kotkansulka
-        }
     static void Main(string[] args)
         {
+            Console.WriteLine("Hei, haluatko tehdä oman(O) nuolen vai käyttää valmiin(V) pohjan?");
+            Nuoli uusinuoli;
+
+            while (true)
+            {
+                ConsoleKey userinput = Console.ReadKey(true).Key;
+                if (userinput == ConsoleKey.V)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Valitse seuraavista pohjista:");
+                    Console.WriteLine("(A) Aloittelija Nuoli \n(B) Perus Nuoli \n(C) Eliitti Nuoli");
+                    switch (Console.ReadKey(true).Key)
+                    {
+                        case ConsoleKey.A:
+                            uusinuoli = Nuoli.LuoAloittelijanuoli();
+                            break;
+                        case ConsoleKey.B:
+                            uusinuoli = Nuoli.LuoPerusNuoli();
+                            break;
+                        case ConsoleKey.C:
+                            uusinuoli = Nuoli.LuoEliittiNuoli();
+                            break;
+                        default:
+                            uusinuoli = Nuoli.LuoAloittelijanuoli();
+                            Console.WriteLine("Nuolipohjaa ei löytynyt, käytetään Aloittelija Nuolta.");
+                            break;
+                    }
+                    break;
+                }
+                else if (userinput == ConsoleKey.O)
+                {
+                    uusinuoli = TeeNuoliValinnat();
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Käytä O tai V kirjaimia.");
+                }
+            }
+            Console.Write($"Tämän nuolen hinta on: {uusinuoli.PalautaHinta()}");
+            Console.ReadKey();
+        }
+        private static Nuoli TeeNuoliValinnat()
+        {
             Console.Write($"Minkälainen kärki ({Karki.Puu}, {Karki.Teräs}, {Karki.Timantti})?: ");
-            string karkivastaus;
+            Karki karkivastaus;
             if (Enum.TryParse(Console.ReadLine(), true, out Karki sKarki))
             {
-                karkivastaus = sKarki.ToString();
+                karkivastaus = sKarki;
             }
             else
             {
                 Console.WriteLine("Kärki ei löydy, käytetään Puu kärkeä.");
-                karkivastaus = Karki.Puu.ToString();
+                karkivastaus = Karki.Puu;
             }
 
             Console.Write($"Minkälaiset sulat ({Pera.Lehti}, {Pera.Kanansulka}, {Pera.Kotkansulka})?: ");
-            string peravastaus;
+            Pera peravastaus;
             if (Enum.TryParse(Console.ReadLine(), true, out Pera sPera))
             {
-                peravastaus = sPera.ToString();
+                peravastaus = sPera;
             }
             else
             {
                 Console.WriteLine("Perä ei löydy, käytetään Lehti perää.");
-                peravastaus = Pera.Lehti.ToString();
+                peravastaus = Pera.Lehti;
             }
 
             int nuolenpituus;
@@ -64,43 +108,11 @@ namespace Nuolia_kaupan
                     continue;
                 }
             }
-
-            Console.Write($"Tämän nuolen hinta on: {PalautaHinta(karkivastaus, peravastaus, nuolenpituus)}");
-            Console.ReadKey();
-        }
-        static int PalautaHinta(string karkiv, string perav, int npituus)
-        {
-            int karkihinta;
-            if (karkiv == Karki.Puu.ToString())
-            {
-                karkihinta = 3;
-            }
-            else if (karkiv == Karki.Teräs.ToString())
-            {
-                karkihinta = 5;
-            }
-            else
-            {
-                karkihinta = 50;
-            }
-
-            int perahinta;
-            if (perav == Pera.Kanansulka.ToString())
-            {
-                perahinta = 1;
-            }
-            else if (perav == Pera.Kotkansulka.ToString())
-            {
-                perahinta = 5;
-            }
-            else
-            {
-                perahinta = 0;
-            }
-
-            int pituushinta = (int)(npituus * 0.05);
-            int kokonaishinta = karkihinta + perahinta + pituushinta;
-            return kokonaishinta;
+            Nuoli uusinuoli = new Nuoli();
+            uusinuoli.Karki = karkivastaus;
+            uusinuoli.Pera = peravastaus;
+            uusinuoli.Nuolipituus = nuolenpituus;
+            return uusinuoli;
         }
     }
 }
