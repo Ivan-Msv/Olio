@@ -14,7 +14,7 @@ namespace Seikkailijanreppu
 
             while (true)
             {
-                uusreppu.Tilanne();
+                uusreppu.Tilanne(uusreppu);
                 ConsoleKey userinput = Console.ReadKey(true).Key;
                 Tavara userchoice = null;
                 switch (userinput)
@@ -47,7 +47,7 @@ namespace Seikkailijanreppu
                 if (uusreppu.Lisää(userchoice))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("Tavara oli lisätty reppuun.");
+                    Console.WriteLine($"Tavara oli lisätty reppuun.");
                     Console.ResetColor();
                 }
                 else

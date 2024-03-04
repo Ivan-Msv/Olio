@@ -10,6 +10,10 @@ namespace Seikkailijanreppu
     {
         public float Tilavuus { get; private set; }
         public float Paino { get; private set; }
+        public override string ToString()
+        {
+            return GetType().Name.ToString();
+        }
 
         public Tavara(float paino, float tilavuus)
         {
